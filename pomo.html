@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzled Pomodoro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Felipa&display=swap');
+    </style>
+    <link rel="stylesheet" href="pomo.css">
+</head>
+
+<body>
+    <div id="currentTime"></div>
+    <div id="waterRem">⏰</div>
+    <div id="sound">🧠</div>
+    <div id="reminder" hidden></div>
+    <header>Ready to puzzle?</header>
+    <button id="startBut">start</button>
+    <div hidden id="workTimer">
+        <div class="drag">
+            <div class="close">X</div>
+        </div>
+        <div id="timer">
+        </div>
+        <button id="subtime">Set</button>
+        <div id="timeDisp"></div>
+        <button id="pause">Play/Pause</button>
+        <p hidden id="quip">work...the eternal puzzle</p>
+    </div>
+    <!--break-->
+    <button id="breakBut">take a break</button>
+    <div hidden id="breakDirect">
+        <div class="drag">
+            <div class="close">X</div>
+        </div>
+        <div id="organize">
+        <img title="get some inspiration!" id="quoteDir" src="https://cdn.pixabay.com/photo/2017/09/12/22/50/pink-flowers-2743942_1280.jpg">
+        <img title="a different kind of puzzle" id="sudDir" src="https://cdn.pixabay.com/photo/2019/12/12/18/44/optics-4691414_1280.jpg">
+        <img title="set some goals for today!" id="chListDir" src="https://cdn.pixabay.com/photo/2017/08/07/19/41/to-do-2607082_1280.jpg">
+        </div>
+    </div>
+    <div hidden id="quote">
+        <div class="drag">
+            <div class="close">X</div>
+        </div>
+        <div id="insquo"></div>
+        <button id="regen">see another</button>
+    </div>
+    <div hidden id="checklist">
+        <div class="drag">
+            <div class="close">X</div>
+        </div>
+    </div>
+    <div hidden id="sudoku">
+        <div class="drag">
+            <div class="close">X</div>
+        </div>
+    </div>
+    <img id="bg" draggable="false" src="https://cdn.pixabay.com/photo/2025/08/07/13/59/sea-9761017_1280.jpg">
+    <script src="pomo.js"></script>
+    <script src="breaks.js"></script>
+</body>
+
+</html>
